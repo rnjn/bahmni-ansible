@@ -1,0 +1,11 @@
+- name: install createrepo
+  yum: name=createrepo state=present
+
+- name: create repository folders
+  file: path={{ bahmni_yum_repo_path }} state=directory
+
+- name: create repository
+  command: createrepo {{ bahmni_yum_repo_path }}
+
+- name: update repository
+  command: createrepo --update {{ bahmni_yum_repo_path }}
