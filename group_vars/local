@@ -17,8 +17,8 @@ openmrs_context_path: openmrs
 openmrs_server_options: "-Xms512m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=512m"
 
 openmrs_auto_update_database: false
-openmrs_db_username: root
+openmrs_db_username: openmrs-user
 openmrs_db_password: password
-
+openmrs_snapshots_tmp_dir: /tmp/openmrs-snapshots
 
 
